@@ -17,7 +17,7 @@ load_dotenv()
 #Texts splitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-embedding = VoyageAIEmbeddings(model="voyage-large-2-instruct")
+embedding = VoyageAIEmbeddings(model="voyage-large-2-instruct",api_key=st.secrets["api_keys"]["voyageai_api_key"])
 
 
 def process_pdf_directory(path):
