@@ -21,9 +21,10 @@ def render_sidebar():
         st.write("# Options")
         st.markdown("---")
         
-        index = st.text_input("Entrez le nom de l'index", key="index_input")
-        subject = st.text_input("Entrez le thème principal", key="subject_input")
-        sys_instructions = st.text_area("Entrez vos instructions", key="sys_instructions_input")
+        index = "nsiadirect" #st.text_input("Entrez le nom de l'index", key="index_input")
+        subject = "Les offres et services de NSIA" #st.text_input("Entrez le thème principal", key="subject_input")
+        with open("prompt.txt","r") as prompt :
+            sys_instructions = prompt.read() #st.text_area("Entrez vos instructions", key="sys_instructions_input")
         
         return index, subject, sys_instructions
 
