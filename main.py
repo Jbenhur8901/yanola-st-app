@@ -18,8 +18,8 @@ def initialize_session_state():
 def render_sidebar():
     with st.sidebar:
         st.logo("images/logo nodes (1).png", size="large")  # Optimisation visuelle
-        st.write("# Options")
-        st.markdown("---")
+        # st.write("# Options")
+        # st.markdown("---")
         
         index = "nsiadirect" #st.text_input("Entrez le nom de l'index", key="index_input")
         subject = "Les offres et services de NSIA" #st.text_input("Entrez le thème principal", key="subject_input")
